@@ -14,6 +14,10 @@ Prompt:
 
 Enter the password used to decrypt the filesystem.
 
+# Mistakes
+The problem that I had while doing this Task was the amount of unncessary time I spent on this task. 
+In this task, I found my answer and was shuffling around the answer many times. I couldn't understand that I found my answer in the 1st week. I found the output of running hashcat appended to the end of my output.txt which contained 10 lines of the same hashcat output.
+
 # Problem Solving Approach 
 In order to find the encrypted partition, we have to extract the files from the USB drive image. From the USB drive image, we can find artifacts for the encrypted partition and find clues
 regarding its password. After extraction, we have found the encrypted partition and we have a file called mount_part that denotes how to mount the encrypted partition. 
