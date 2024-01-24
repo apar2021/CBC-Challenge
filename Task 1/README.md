@@ -12,6 +12,6 @@ NSA database of signals (database.db)
 Prompt:
 Provide database record IDs, one per line, that fit within the parameters specified above.
 
-Approach to Solving: 
+# Approach to Solving: 
 Given the task information, we have to find the records of a signal that is over 30 nautical miles from the Oconus. While looking through the database, we can find database records that are in the given distance from the Oconus. I was able to access the database using the SQLite application. In the database, we can find five tables: audio_object,event,location,and sqlite_sequence,and timestamp. 
 After simulatenously parsing through the five tables, we can find all the records that coincide with the given criteria of the Task. There should be less than 10 records while submitting your answer. 
