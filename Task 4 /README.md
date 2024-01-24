@@ -1,4 +1,4 @@
-Task 4 - Emulate the Firmware - (Dynamic Reverse Engineering, Cryptography) Points: 500
+# Task 4 - Emulate the Firmware - (Dynamic Reverse Engineering, Cryptography) Points: 500
 We were able to extract the device firmware, however there isn't much visible on it. All the important software might be protected by another method.
 
 There is another disk on a USB device with an interesting file that looks to be an encrypted filesystem. Can you figure out how the system decrypts and mounts it? Recover the password used to decrypt it. You can emulate the device using the QEMU docker container from task 3.
@@ -14,7 +14,7 @@ Prompt:
 
 Enter the password used to decrypt the filesystem.
 
-Problem Solving Approach:
+# Problem Solving Approach 
 In order to find the encrypted partition, we have to extract the files from the USB drive image. From the USB drive image, we can find artifacts for the encrypted partition and find clues
 regarding its password. After extraction, we have found the encrypted partition and we have a file called mount_part that denotes how to mount the encrypted partition. 
 We are introduced to a LUKSv1 partition that essentially is very secure. To find out more information about the partition, we can dump the header of the partition. 
