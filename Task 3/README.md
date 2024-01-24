@@ -1,4 +1,4 @@
-Task 3 - Analyze the Firmware - (Emulation)Points: 200
+# Task 3 - Analyze the Firmware - (Emulation)Points: 200
 Leveraging that datasheet enabled you to provide the correct pins and values to properly communicate with the device over UART. 
 Because of this we were able to communicate with the device console and initiate a filesystem dump.
 To begin analysis, we loaded the firmware in an analysis tool. 
@@ -23,6 +23,6 @@ Prompt:
 Enter the decryption key u-boot will use.
 
 Comments: I think anyone who did Task 3 knows from experience that the answer was primarily there and we pretty much ran circles around it half the time. 
-Problem Solving Approach:
+# Problem Solving Approach 
 While booting up the QEMU emulator for the Raspberry PI device, we are loaded into the bootloader which lists environment variables as well as commands we can run inside of it. 
 While parsing through our environment variables, we can find our answer in this case by reading memory at memory locations designated by the bootloader env vars. 
